@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidneia Cosméticos | Catálogo Roxo</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Adicionando alguns ajustes extras de estilo aqui para garantir o tema Roxo */
+        :root {
+            --roxo-principal: #4a148c;
+            --roxo-claro: #7b1fa2;
+            --detalhe: #ea80fc;
+        }
+        
+        .buy-btn {
+            transition: all 0.3s ease;
+            background-color: #25d366; /* Verde do Whats para destacar */
+        }
+
+        .buy-btn:hover {
+            background-color: #128c7e;
+            transform: scale(1.05);
+        }
+
+        .creator-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--roxo-principal);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header">
+        <nav>
+            <div class="logo">Sidneia <span>Cosméticos</span></div>
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#criador">Criador</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Beleza & Sofisticação</h1>
+        <p>Encontre Natura, Boticário e Eudora com o melhor atendimento.</p>
+        <a href="#produtos" class="btn">Explorar Catálogo</a>
+    </section>
+
+    <section id="criador" class="creators-section" style="background-color: #f3e5f5; padding: 60px 20px;">
+        <h2 style="color: var(--roxo-principal); margin-bottom: 30px;">Criador do Site</h2>
+        <div class="creator-card" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <img src="criador.jpg" alt="Victor Hugo">
+            <div class="creator-info">
+                <h3 style="margin-top: 15px;">Victor Hugo Vital Correia</h3>
+                <p>Desenvolvedor Responsável pelo Projeto</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos" class="container">
+        <h2 style="margin-bottom: 40px; color: var(--roxo-principal);">Catálogo de Produtos</h2>
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <img src="https://res.cloudinary.com/beleza-na-web/image/upload/f_auto,fl_progressive,q_auto:best/v1/imagens/product/B73748/07842603-68d8-4f81-9f93-0663737486e9-lily-eau-de-parfum-75ml.png" alt="Lily">
+                <h3>Lily Eau de Parfum</h3>
+                <p>O Boticário</p>
+                <span class="price">R$ 259,90</span>
+                <button class="buy-btn" onclick="enviarWhats('Lily Eau de Parfum', 'R$ 259,90')">Pedir no WhatsApp</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://production.na01.natura.com/on/demandware.static/-/Sites-natura-br-storefront/default/dw8625902b/produtos/73554_1.jpg" alt="Natura">
+                <h3>Tododia Cereja e Avelã</h3>
+                <p>Natura</p>
+                <span class="price">R$ 64,90</span>
+                <button class="buy-btn" onclick="enviarWhats('Tododia Cereja e Avelã', 'R$ 64,90')">Pedir no WhatsApp</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://res.cloudinary.com/beleza-na-web/image/upload/f_auto,fl_progressive,q_auto:best/v1/imagens/product/E47311/6763467d-d9b1-419f-939e-2895692019b8-eudora-batom-liquido-matte-tint-bordao-vintage-4g.png" alt="Eudora">
+                <h3>Batom Matte Tint</h3>
+                <p>Eudora</p>
+                <span class="price">R$ 39,90</span>
+                <button class="buy-btn" onclick="enviarWhats('Batom Matte Tint', 'R$ 39,90')">Pedir no WhatsApp</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://res.cloudinary.com/beleza-na-web/image/upload/f_auto,fl_progressive,q_auto:best/v1/imagens/product/B77151/8468d600-0e10-401a-9669-e0996c5e2544-malbec-desodorante-colonia-100ml.png" alt="Malbec">
+                <h3>Malbec Desodorante</h3>
+                <p>O Boticário</p>
+                <span class="price">R$ 179,90</span>
+                <button class="buy-btn" onclick="enviarWhats('Malbec Desodorante', 'R$ 179,90')">Pedir no WhatsApp</button>
+            </div>
+
+             <div class="product-card">
+                <img src="https://production.na01.natura.com/on/demandware.static/-/Sites-natura-br-storefront/default/dw32026859/produtos/50990_1.jpg" alt="Essencial">
+                <h3>Essencial Masculino</h3>
+                <p>Natura</p>
+                <span class="price">R$ 196,00</span>
+                <button class="buy-btn" onclick="enviarWhats('Essencial Masculino', 'R$ 196,00')">Pedir no WhatsApp</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://res.cloudinary.com/beleza-na-web/image/upload/f_auto,fl_progressive,q_auto:best/v1/imagens/product/E54955/7956a908-0131-4e78-9993-4a11c15f4039-eudora-siage-pos-coloracao-shampoo-250ml.png" alt="Siage">
+                <h3>Shampoo Siàge</h3>
+                <p>Eudora</p>
+                <span class="price">R$ 45,90</span>
+                <button class="buy-btn" onclick="enviarWhats('Shampoo Siàge', 'R$ 45,90')">Pedir no WhatsApp</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Sidneia Cosméticos | Desenvolvido por Victor Hugo</p>
+    </footer>
+
+    <script>
+        // 1. Função para enviar o pedido para o WhatsApp
+        function enviarWhats(produto, preco) {
+            // SUBSTITUA O NÚMERO ABAIXO PELO DA SIDNEIA (Ex: 55 + DDD + Numero)
+            const celular = "5561996835697"; 
+            const texto = `Olá Sidneia! Gostaria de comprar o produto: *${produto}* (${preco}). está disponível?`;
+            const msgCodificada = encodeURIComponent(texto);
+            const url = `https://wa.me/${celular}?text=${msgCodificada}`;
+            
+            window.open(url, '_blank');
+        }
+
+        // 2. Efeito de mudar a cor do Header ao rolar
+        window.onscroll = function() {
+            const header = document.getElementById("header");
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                header.style.background = "#311b92"; // Roxo mais escuro
+                header.style.boxShadow = "0 4px 8px rgba(0,0,0,0.2)";
+            } else {
+                header.style.background = "#4a148c";
+                header.style.boxShadow = "none";
+            }
+        };
+
+        // 3. Alerta de boas-vindas (opcional)
+        console.log("Site da Sidneia carregado com sucesso! Criado por Victor Hugo.");
+    </script>
+
+</body>
+</html>
